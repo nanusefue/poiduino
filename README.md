@@ -21,3 +21,5 @@ Guantes
 
 papel de diario
 
+Papel para transfer de placas PCB
+Alicate
