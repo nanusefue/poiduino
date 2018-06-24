@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2788,7 +2788,7 @@ naming: grid - package width</description>
 <wire x1="-3.81" y1="-64.77" x2="-3.81" y2="-34.29" width="0.1524" layer="94" style="longdash"/>
 </plain>
 <instances>
-<instance part="JP1" gate="A" x="-44.45" y="46.99"/>
+<instance part="JP1" gate="A" x="-43.08" y="48.26"/>
 <instance part="JP2" gate="A" x="20.32" y="25.4"/>
 <instance part="JP3" gate="A" x="20.32" y="-2.54"/>
 <instance part="JP4" gate="A" x="20.32" y="-33.02"/>
@@ -2810,8 +2810,8 @@ naming: grid - package width</description>
 <instance part="K1" gate="G$1" x="-53.34" y="83.82"/>
 <instance part="SUPPLY2" gate="GND" x="-72.39" y="76.2"/>
 <instance part="P+1" gate="VCC" x="-80.01" y="74.93" rot="R180"/>
-<instance part="SUPPLY3" gate="GND" x="-54.61" y="39.37"/>
-<instance part="C6" gate="G$1" x="-71.12" y="54.61"/>
+<instance part="SUPPLY3" gate="GND" x="-55.88" y="40.64"/>
+<instance part="C6" gate="G$1" x="-70.104" y="55.88"/>
 <instance part="SUPPLY4" gate="GND" x="-50.8" y="11.43"/>
 <instance part="P+2" gate="VCC" x="-92.71" y="10.16" rot="R180"/>
 <instance part="SUPPLY5" gate="GND" x="-50.8" y="-22.86"/>
@@ -2841,8 +2841,8 @@ naming: grid - package width</description>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="6"/>
-<wire x1="-46.99" y1="41.91" x2="-54.61" y2="41.91" width="0.1524" layer="91"/>
-<label x="-57.15" y="41.91" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="-45.62" y1="43.18" x2="-55.88" y2="43.18" width="0.1524" layer="91"/>
+<label x="-58.42" y="43.18" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -2948,8 +2948,8 @@ naming: grid - package width</description>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="-74.93" y1="54.61" x2="-80.01" y2="54.61" width="0.1524" layer="91"/>
-<label x="-82.55" y="54.61" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="-73.914" y1="55.88" x2="-81.026" y2="55.88" width="0.1524" layer="91"/>
+<label x="-82.042" y="55.626" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="20.32" x2="7.62" y2="20.32" width="0.1524" layer="91"/>
@@ -3224,8 +3224,8 @@ naming: grid - package width</description>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
-<wire x1="-46.99" y1="46.99" x2="-54.61" y2="46.99" width="0.1524" layer="91"/>
-<label x="-57.15" y="46.99" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="-45.62" y1="48.26" x2="-55.88" y2="48.26" width="0.1524" layer="91"/>
+<label x="-58.42" y="48.26" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -3251,11 +3251,6 @@ naming: grid - package width</description>
 </net>
 <net name="RXD" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
-<wire x1="-46.99" y1="52.07" x2="-54.61" y2="52.07" width="0.1524" layer="91"/>
-<label x="-57.15" y="52.07" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="(RXD)PD0"/>
 <wire x1="142.24" y1="-45.72" x2="148.59" y2="-45.72" width="0.1524" layer="91"/>
 <label x="152.4" y="-45.72" size="1.27" layer="95" xref="yes"/>
@@ -3265,13 +3260,13 @@ naming: grid - package width</description>
 <pinref part="JP4" gate="A" pin="1"/>
 <wire x1="17.78" y1="-22.86" x2="7.62" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<label x="-58.42" y="50.8" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="-45.62" y1="50.8" x2="-55.88" y2="50.8" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="TXD" class="0">
-<segment>
-<pinref part="JP1" gate="A" pin="3"/>
-<wire x1="-46.99" y1="49.53" x2="-54.61" y2="49.53" width="0.1524" layer="91"/>
-<label x="-57.15" y="49.53" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="(TXD)PD1"/>
 <wire x1="142.24" y1="-43.18" x2="148.59" y2="-43.18" width="0.1524" layer="91"/>
@@ -3282,12 +3277,17 @@ naming: grid - package width</description>
 <label x="5.08" y="-25.4" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP4" gate="A" pin="2"/>
 </segment>
+<segment>
+<label x="-58.42" y="53.34" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="-45.62" y1="53.34" x2="-55.88" y2="53.34" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="CTS" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="5"/>
-<wire x1="-46.99" y1="44.45" x2="-54.61" y2="44.45" width="0.1524" layer="91"/>
-<label x="-57.15" y="44.45" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="-45.62" y1="45.72" x2="-55.88" y2="45.72" width="0.1524" layer="91"/>
+<label x="-58.42" y="45.72" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -3307,9 +3307,9 @@ naming: grid - package width</description>
 <net name="DTR" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
-<label x="-57.15" y="54.61" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="-58.42" y="55.88" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="-67.31" y1="54.61" x2="-46.99" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="-66.294" y1="55.88" x2="-45.62" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
