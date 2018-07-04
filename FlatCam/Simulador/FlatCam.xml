@@ -1,0 +1,22 @@
+<camotics>
+  <!-- Note, all values are in mm regardless of 'units' option. -->
+  <!-- NC Files -->
+  <nc-files>
+    ../FlatCamGcode/trace.nc ../FlatCamGcode/out.nc ../FlatCamGcode/drill.nc ../FlatCamGcode/nocopper.nc
+  </nc-files>
+
+  <!-- Renderer -->
+  <resolution v='0.128942'/>
+  <resolution-mode v='VERY_HIGH'/>
+
+  <!-- Workpiece -->
+  <automatic-workpiece v='true'/>
+  <workpiece-max v='(77.9467,65.9864,0)'/>
+  <workpiece-min v='(-4.70049,-2.63516,-3.78)'/>
+
+  <tool_table>
+    <tool length='10' number='1' radius='0.195' shape='CYLINDRICAL' units='MM'/>
+    <tool length='10' number='2' radius='0.395' shape='CYLINDRICAL' units='MM'/>
+    <tool length='10' number='3' radius='1.5' shape='CYLINDRICAL' units='MM'/>
+  </tool_table>
+</camotics>
